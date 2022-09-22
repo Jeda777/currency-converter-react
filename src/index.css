@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+    @apply lg:text-lg;
+}
+input, select{
+    @apply text-black p-2 rounded-md w-full h-9 bg-white;
+}
+button{
+    @apply border-white border-2 hover:bg-white hover:bg-opacity-20 transition-all;
+}
+
+.currency-group, .amount-group{
+    @apply flex gap-4 w-full items-center;
+}
+.input-group{
+    @apply flex flex-1 flex-col gap-1;
+}
